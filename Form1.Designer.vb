@@ -51,8 +51,11 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txt1 = New System.Windows.Forms.TextBox()
-        Me.txt2 = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.CmbOperator = New System.Windows.Forms.ComboBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txt3 = New System.Windows.Forms.TextBox()
         Me.MenuStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -283,23 +286,18 @@ Partial Class Form1
         '
         'txt1
         '
-        Me.txt1.Location = New System.Drawing.Point(24, 41)
+        Me.txt1.Location = New System.Drawing.Point(10, 41)
         Me.txt1.Name = "txt1"
         Me.txt1.Size = New System.Drawing.Size(50, 23)
         Me.txt1.TabIndex = 1
         '
-        'txt2
-        '
-        Me.txt2.AllowDrop = True
-        Me.txt2.HideSelection = False
-        Me.txt2.Location = New System.Drawing.Point(90, 41)
-        Me.txt2.Name = "txt2"
-        Me.txt2.Size = New System.Drawing.Size(50, 23)
-        Me.txt2.TabIndex = 2
-        '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.txt2)
+        Me.GroupBox1.BackColor = System.Drawing.SystemColors.Info
+        Me.GroupBox1.Controls.Add(Me.CmbOperator)
+        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Controls.Add(Me.txt3)
         Me.GroupBox1.Controls.Add(Me.txt1)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Location = New System.Drawing.Point(361, 138)
@@ -308,6 +306,42 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 18
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
+        '
+        'CmbOperator
+        '
+        Me.CmbOperator.FormattingEnabled = True
+        Me.CmbOperator.Items.AddRange(New Object() {"+", "-", "x", "/"})
+        Me.CmbOperator.Location = New System.Drawing.Point(74, 41)
+        Me.CmbOperator.Name = "CmbOperator"
+        Me.CmbOperator.Size = New System.Drawing.Size(50, 23)
+        Me.CmbOperator.TabIndex = 20
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(63, 70)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 19
+        Me.Button1.Text = "="
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(74, 96)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(41, 15)
+        Me.Label4.TabIndex = 4
+        Me.Label4.Text = "Label4"
+        '
+        'txt3
+        '
+        Me.txt3.AllowDrop = True
+        Me.txt3.HideSelection = False
+        Me.txt3.Location = New System.Drawing.Point(134, 41)
+        Me.txt3.Name = "txt3"
+        Me.txt3.Size = New System.Drawing.Size(50, 23)
+        Me.txt3.TabIndex = 3
         '
         'Form1
         '
@@ -373,6 +407,9 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents txt1 As TextBox
-    Friend WithEvents txt2 As TextBox
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Label4 As Label
+    Friend WithEvents txt3 As TextBox
+    Friend WithEvents CmbOperator As ComboBox
 End Class
