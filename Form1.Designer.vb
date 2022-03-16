@@ -35,17 +35,31 @@ Partial Class Form1
         Me.FileToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.btnKira = New System.Windows.Forms.Button()
+        Me.txtNama = New System.Windows.Forms.TextBox()
+        Me.txtState = New System.Windows.Forms.TextBox()
+        Me.lblNama = New System.Windows.Forms.Label()
+        Me.lblNegeri = New System.Windows.Forms.Label()
+        Me.btnGenerate = New System.Windows.Forms.Button()
+        Me.lblAge = New System.Windows.Forms.Label()
+        Me.txtAge = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txt1 = New System.Windows.Forms.TextBox()
+        Me.txt2 = New System.Windows.Forms.TextBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.MenuStrip1.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnSubmit
         '
-        Me.btnSubmit.Location = New System.Drawing.Point(257, 74)
+        Me.btnSubmit.Location = New System.Drawing.Point(505, 27)
         Me.btnSubmit.Name = "btnSubmit"
         Me.btnSubmit.Size = New System.Drawing.Size(75, 23)
         Me.btnSubmit.TabIndex = 0
@@ -54,7 +68,7 @@ Partial Class Form1
         '
         'btnClose
         '
-        Me.btnClose.Location = New System.Drawing.Point(257, 220)
+        Me.btnClose.Location = New System.Drawing.Point(586, 27)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(75, 23)
         Me.btnClose.TabIndex = 1
@@ -66,7 +80,7 @@ Partial Class Form1
         Me.lblHello.AutoSize = True
         Me.lblHello.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.lblHello.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblHello.Location = New System.Drawing.Point(103, 109)
+        Me.lblHello.Location = New System.Drawing.Point(12, 27)
         Me.lblHello.Name = "lblHello"
         Me.lblHello.Size = New System.Drawing.Size(17, 28)
         Me.lblHello.TabIndex = 2
@@ -76,7 +90,7 @@ Partial Class Form1
         '
         Me.lblHello2.AutoSize = True
         Me.lblHello2.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.lblHello2.Location = New System.Drawing.Point(100, 154)
+        Me.lblHello2.Location = New System.Drawing.Point(12, 55)
         Me.lblHello2.Name = "lblHello2"
         Me.lblHello2.Size = New System.Drawing.Size(10, 15)
         Me.lblHello2.TabIndex = 3
@@ -87,7 +101,7 @@ Partial Class Form1
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 15
         Me.ListBox1.Items.AddRange(New Object() {"Red", "Yellow", "Green", "Purple"})
-        Me.ListBox1.Location = New System.Drawing.Point(58, 291)
+        Me.ListBox1.Location = New System.Drawing.Point(23, 138)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(120, 94)
         Me.ListBox1.TabIndex = 4
@@ -95,7 +109,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(58, 264)
+        Me.Label1.Location = New System.Drawing.Point(23, 111)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(154, 15)
         Me.Label1.TabIndex = 5
@@ -103,7 +117,7 @@ Partial Class Form1
         '
         'btnSelect
         '
-        Me.btnSelect.Location = New System.Drawing.Point(198, 296)
+        Me.btnSelect.Location = New System.Drawing.Point(163, 134)
         Me.btnSelect.Name = "btnSelect"
         Me.btnSelect.Size = New System.Drawing.Size(75, 23)
         Me.btnSelect.TabIndex = 6
@@ -115,7 +129,7 @@ Partial Class Form1
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.ViewToolStripMenuItem, Me.AboutToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(661, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(721, 24)
         Me.MenuStrip1.TabIndex = 7
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -130,7 +144,7 @@ Partial Class Form1
         '
         Me.OpenToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem1})
         Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.OpenToolStripMenuItem.Text = "Open"
         '
         'FileToolStripMenuItem1
@@ -142,15 +156,26 @@ Partial Class Form1
         'SaveToolStripMenuItem
         '
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.SaveToolStripMenuItem.Text = "Save"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
         Me.ExitToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.E), System.Windows.Forms.Keys)
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
+        '
+        'ToolStripMenuItem1
+        '
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(130, 6)
+        '
+        'HelpToolStripMenuItem
+        '
+        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
+        Me.HelpToolStripMenuItem.Text = "help"
         '
         'EditToolStripMenuItem
         '
@@ -170,22 +195,135 @@ Partial Class Form1
         Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(52, 20)
         Me.AboutToolStripMenuItem.Text = "About"
         '
-        'ToolStripMenuItem1
+        'btnKira
         '
-        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(177, 6)
+        Me.btnKira.Location = New System.Drawing.Point(424, 27)
+        Me.btnKira.Name = "btnKira"
+        Me.btnKira.Size = New System.Drawing.Size(75, 23)
+        Me.btnKira.TabIndex = 8
+        Me.btnKira.Text = "Calculate"
+        Me.btnKira.UseVisualStyleBackColor = True
         '
-        'HelpToolStripMenuItem
+        'txtNama
         '
-        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.HelpToolStripMenuItem.Text = "help"
+        Me.txtNama.Location = New System.Drawing.Point(23, 287)
+        Me.txtNama.Name = "txtNama"
+        Me.txtNama.Size = New System.Drawing.Size(100, 23)
+        Me.txtNama.TabIndex = 9
+        '
+        'txtState
+        '
+        Me.txtState.Location = New System.Drawing.Point(22, 337)
+        Me.txtState.Name = "txtState"
+        Me.txtState.Size = New System.Drawing.Size(100, 23)
+        Me.txtState.TabIndex = 10
+        '
+        'lblNama
+        '
+        Me.lblNama.AutoSize = True
+        Me.lblNama.Location = New System.Drawing.Point(24, 269)
+        Me.lblNama.Name = "lblNama"
+        Me.lblNama.Size = New System.Drawing.Size(39, 15)
+        Me.lblNama.TabIndex = 11
+        Me.lblNama.Text = "Name"
+        '
+        'lblNegeri
+        '
+        Me.lblNegeri.AutoSize = True
+        Me.lblNegeri.Location = New System.Drawing.Point(22, 320)
+        Me.lblNegeri.Name = "lblNegeri"
+        Me.lblNegeri.Size = New System.Drawing.Size(33, 15)
+        Me.lblNegeri.TabIndex = 12
+        Me.lblNegeri.Text = "State"
+        '
+        'btnGenerate
+        '
+        Me.btnGenerate.Location = New System.Drawing.Point(23, 395)
+        Me.btnGenerate.Name = "btnGenerate"
+        Me.btnGenerate.Size = New System.Drawing.Size(75, 23)
+        Me.btnGenerate.TabIndex = 13
+        Me.btnGenerate.Text = "Generate"
+        Me.btnGenerate.UseVisualStyleBackColor = True
+        '
+        'lblAge
+        '
+        Me.lblAge.AutoSize = True
+        Me.lblAge.Location = New System.Drawing.Point(138, 272)
+        Me.lblAge.Name = "lblAge"
+        Me.lblAge.Size = New System.Drawing.Size(28, 15)
+        Me.lblAge.TabIndex = 14
+        Me.lblAge.Text = "Age"
+        '
+        'txtAge
+        '
+        Me.txtAge.Location = New System.Drawing.Point(138, 289)
+        Me.txtAge.Name = "txtAge"
+        Me.txtAge.Size = New System.Drawing.Size(100, 23)
+        Me.txtAge.TabIndex = 15
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.SystemColors.Info
+        Me.Label2.Location = New System.Drawing.Point(138, 337)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(58, 15)
+        Me.Label2.TabIndex = 16
+        Me.Label2.Text = "Summary"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label3.Location = New System.Drawing.Point(6, 19)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(80, 21)
+        Me.Label3.TabIndex = 0
+        Me.Label3.Text = "Calculator"
+        '
+        'txt1
+        '
+        Me.txt1.Location = New System.Drawing.Point(24, 41)
+        Me.txt1.Name = "txt1"
+        Me.txt1.Size = New System.Drawing.Size(50, 23)
+        Me.txt1.TabIndex = 1
+        '
+        'txt2
+        '
+        Me.txt2.AllowDrop = True
+        Me.txt2.HideSelection = False
+        Me.txt2.Location = New System.Drawing.Point(90, 41)
+        Me.txt2.Name = "txt2"
+        Me.txt2.Size = New System.Drawing.Size(50, 23)
+        Me.txt2.TabIndex = 2
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.txt2)
+        Me.GroupBox1.Controls.Add(Me.txt1)
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Location = New System.Drawing.Point(361, 138)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(200, 208)
+        Me.GroupBox1.TabIndex = 18
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "GroupBox1"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(661, 449)
+        Me.ClientSize = New System.Drawing.Size(721, 449)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.txtAge)
+        Me.Controls.Add(Me.lblAge)
+        Me.Controls.Add(Me.btnGenerate)
+        Me.Controls.Add(Me.lblNegeri)
+        Me.Controls.Add(Me.lblNama)
+        Me.Controls.Add(Me.txtState)
+        Me.Controls.Add(Me.txtNama)
+        Me.Controls.Add(Me.btnKira)
         Me.Controls.Add(Me.btnSelect)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ListBox1)
@@ -199,6 +337,8 @@ Partial Class Form1
         Me.Text = "Form1"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -222,4 +362,17 @@ Partial Class Form1
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem1 As ToolStripSeparator
     Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents btnKira As Button
+    Friend WithEvents txtNama As TextBox
+    Friend WithEvents txtState As TextBox
+    Friend WithEvents lblNama As Label
+    Friend WithEvents lblNegeri As Label
+    Friend WithEvents btnGenerate As Button
+    Friend WithEvents lblAge As Label
+    Friend WithEvents txtAge As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents txt1 As TextBox
+    Friend WithEvents txt2 As TextBox
+    Friend WithEvents GroupBox1 As GroupBox
 End Class

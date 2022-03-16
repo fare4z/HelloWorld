@@ -17,4 +17,13 @@
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
         Close()
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnKira.Click
+        MsgBox("50" & "+" & "1" & "=" & 50 + 1)
+    End Sub
+
+    Private Sub btnGenerate_Click(sender As Object, e As EventArgs) Handles btnGenerate.Click
+        'MsgBox("Hi, my name is " + txtNama.Text + " and i'm from " + txtState.Text + ". I am " + txtAge.Text + " years old")
+        Label2.Text = "Hi, my name is " + txtNama.Text + " and i'm from " + txtState.Text + ". I am " + txtAge.Text + " years old"
+    End Sub
 End Class
