@@ -3,6 +3,11 @@
         MsgBox("Hello World!!")
         lblHello.Text = "Welcome to my first VB Application"
         lblHello2.Text = "Fareez"
+
+        Const poliName As String = "Politeknik Seberang Perai"
+        'Dim poliName As String = "psp"
+        'poliName = "ss"
+        lblPoli.Text = poliName
     End Sub
 
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
