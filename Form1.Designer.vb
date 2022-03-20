@@ -57,6 +57,7 @@ Partial Class Form1
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txt3 = New System.Windows.Forms.TextBox()
         Me.lblPoli = New System.Windows.Forms.Label()
+        Me.btnEnum = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -354,11 +355,22 @@ Partial Class Form1
         Me.lblPoli.TabIndex = 19
         Me.lblPoli.Text = " "
         '
+        'btnEnum
+        '
+        Me.btnEnum.AutoSize = True
+        Me.btnEnum.Location = New System.Drawing.Point(266, 27)
+        Me.btnEnum.Name = "btnEnum"
+        Me.btnEnum.Size = New System.Drawing.Size(104, 25)
+        Me.btnEnum.TabIndex = 20
+        Me.btnEnum.Text = "ENUMERATIONS"
+        Me.btnEnum.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(721, 449)
+        Me.Controls.Add(Me.btnEnum)
         Me.Controls.Add(Me.lblPoli)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label2)
@@ -425,4 +437,5 @@ Partial Class Form1
     Friend WithEvents txt3 As TextBox
     Friend WithEvents CmbOperator As ComboBox
     Friend WithEvents lblPoli As Label
+    Friend WithEvents btnEnum As Button
 End Class
