@@ -1,8 +1,23 @@
 ﻿Public Class Form1
+
+    Enum colors
+        red = 1
+        orange = 2
+        yellow = 3
+        green = 4
+    End Enum
+
+    Private color As colors = 3
+    'Private color As colors = colors.red
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
         MsgBox("Hello World!!")
         lblHello.Text = "Welcome to my first VB Application"
         lblHello2.Text = "Fareez"
+
+        Const poliName As String = "Politeknik Seberang Perai"
+        'Dim poliName As String = "psp"
+        'poliName = "ss"
+        lblPoli.Text = poliName
     End Sub
 
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
@@ -44,5 +59,9 @@
             Label4.Text = "Error"
         End If
 
+    End Sub
+
+    Private Sub btnEnum_Click(sender As Object, e As EventArgs) Handles btnEnum.Click
+        MessageBox.Show(color.ToString)
     End Sub
 End Class
