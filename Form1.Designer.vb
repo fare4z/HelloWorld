@@ -270,7 +270,7 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.SystemColors.Info
-        Me.Label2.Location = New System.Drawing.Point(138, 337)
+        Me.Label2.Location = New System.Drawing.Point(138, 345)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(58, 15)
         Me.Label2.TabIndex = 16
@@ -302,7 +302,7 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.txt3)
         Me.GroupBox1.Controls.Add(Me.txt1)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Location = New System.Drawing.Point(361, 138)
+        Me.GroupBox1.Location = New System.Drawing.Point(509, 87)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(200, 208)
         Me.GroupBox1.TabIndex = 18
@@ -357,7 +357,7 @@ Partial Class Form1
         'btnEnum
         '
         Me.btnEnum.AutoSize = True
-        Me.btnEnum.Location = New System.Drawing.Point(266, 27)
+        Me.btnEnum.Location = New System.Drawing.Point(424, 56)
         Me.btnEnum.Name = "btnEnum"
         Me.btnEnum.Size = New System.Drawing.Size(104, 25)
         Me.btnEnum.TabIndex = 20

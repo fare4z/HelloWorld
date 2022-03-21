@@ -38,8 +38,11 @@
     End Sub
 
     Private Sub btnGenerate_Click(sender As Object, e As EventArgs) Handles btnGenerate.Click
+        Dim tarikh As Date = Today
+
         'MsgBox("Hi, my name is " + txtNama.Text + " and i'm from " + txtState.Text + ". I am " + txtAge.Text + " years old")
-        Label2.Text = "Hi, my name is " + txtNama.Text + " and i'm from " + txtState.Text + ". I am " + txtAge.Text + " years old"
+        Label2.Text = "Hi, my name is " + txtNama.Text + " and i'm from " + txtState.Text + ". I am " + txtAge.Text + " years old" + vbCrLf +
+            " Date cstr :" + (CStr(tarikh)) + vbCrLf + " Date biasa :" + tarikh
     End Sub
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
